@@ -1,29 +1,29 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import AOSWrapper from "../AOS/AOSWrapper";
-import { images } from "../MyImage";
+// import { images } from "../MyImage";
 import Navbar from "../Navbar";
-import Slick from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import Slick from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 const Aside = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const settings = {
-    dots: false,
-    infinite: true,
-    autoplay: true,
-    speed: 2500,
-    fade: true,
-    className: "w-full h-full ",
+  // const [activeIndex, setActiveIndex] = useState(0);
+  // const settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   autoplay: true,
+  //   speed: 2500,
+  //   fade: true,
+  //   className: "w-full h-full ",
 
-    afterChange: (current) => setActiveIndex(current),
-  };
+  //   afterChange: (current) => setActiveIndex(current),
+  // };
 
   return (
     <>
       <AOSWrapper>
-        <div className="w-full bg-[#0080FF] overflow-hidden relative min-h-screen flex flex-col items-center justify-center">
+        <div className="w-full bg-gradient-to-t from-[#7CA6D6]/50 via-[#7CA6D6]/30 to-[#7CA6D6] overflow-hidden relative min-h-screen flex flex-col items-center justify-center">
           {/* <Canvas /> */}
           <div
             data-aos="fade-down"
@@ -34,7 +34,7 @@ const Aside = () => {
           </div>
 
           <Navbar />
-          <div
+          {/* <div
             data-aos="fade-up"
             data-aos-duration="3000"
             className="w-[36%]  p-1 flex items-center justify-center fixed  z-30"
@@ -52,7 +52,7 @@ const Aside = () => {
               ))}
             </Slick>
             <div className="absolute  rounded-full bg-gradient-to-t from-[#000000] via-transparent to-[#FBFBFB] top-0 z-30 w-full h-full" />
-          </div>
+          </div> */}
 
           <div className="flex flex-col gap-9 items-center justify-center fixed bottom-16 z-30">
             <div
@@ -66,18 +66,16 @@ const Aside = () => {
                 transition={{ duration: 0.4 }}
                 className="text-3xl text-zinc-100 font-[parisienne] tracking-widest"
               >
-                Ananto
+                Inov
               </h1>
               <span className="text-5xl font-[parisienne] text-stone-400">
                 &
               </span>
               <h1 className="text-3xl text-zinc-100 font-[parisienne] tracking-widest">
-                Dian
+                Irsan
               </h1>
             </div>
-            <p className="titles text-zinc-500 py-0 text-2xl">
-              10 September 2023
-            </p>
+            <p className="titles text-zinc-500 py-0 text-2xl">5 Juli 2023</p>
           </div>
         </div>
       </AOSWrapper>
