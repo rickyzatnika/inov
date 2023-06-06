@@ -29,21 +29,24 @@ const Header = () => {
             <h1
               data-aos="fade-down"
               data-aos-duration="800"
-              className="text-stone-800/80 titles font-semibold tracking-widest text-xl sm:text-xl"
+              className="text-stone-800/80 titles tracking-widest text-xl sm:text-xl"
             >
               The Wedding Of
             </h1>
-            {/* <div
+            <div
               // data-aos="fade-up"
               // data-aos-duration="3000"
-              className="w-full my-6 z-10 relative  "
+              className="w-[46%]  p-2 flex items-center justify-center z-30"
             >
-              <img
-                src="/img/mempelai.png"
+              <Image
+                src="/image/avatar.jpeg"
                 alt=""
-                className="w-32 mx-auto h-auto relative p-1 object-cover   "
+                width={250}
+                height={250}
+                priority
+                className="w-80 h-auto relative object-cover shadow-md shadow-black  rounded-full "
               />
-            </div> */}
+            </div>
             <div className="text-center flex items-center leading-relaxed py-4">
               <h3
                 data-aos="fade-up"

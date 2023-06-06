@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }) {
     return (
       <>
         <Head>
-          <title>Ananto & Dian</title>
+          <title>Novelia & Irsan</title>
           <meta name="description" content="Webqodes Invitation - Buat undangan pernikahanmu yang spesial dengan web undangan kami. Temukan desain dan pilihan yang sesuai dengan kebutuhanmu."></meta>
           <meta name="keywords" content="Webqodes Invitation, web undangan pernikahan, undangan pernikahan online, desain undangan pernikahan, webhouse invitation"></meta>
           <meta name="robots" content="index, follow"></meta>

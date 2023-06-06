@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Image from "next/legacy/image";
 import AOSWrapper from "../AOS/AOSWrapper";
@@ -15,6 +16,15 @@ const Profile = () => {
           className="w-full min-h-screen overflow-hidden bg-[url('/image/bg-cover.png')] bg-cover bg-right bg-no-repeat flex flex-col items-center justify-center py-24 lg:justify-between relative "
           id="profile"
         >
+          <div className="text-center relative z-40 px-2 leading-relaxed mb-10">
+            <h3 className="titles text-2xl mb-3">
+              Assalamu'alaikum Warohmatullahi Wabarokatuh
+            </h3>
+            <p className="text-zinc-700 text-sm">
+              Dengan memohon Ridho serta Rahmat Allah SWT, kami bermaksud
+              menyelenggarakan resepsi pernikahan putra-putri kami,
+            </p>
+          </div>
           <div className="absolute w-full h-full top-0 bg-gradient-to-t from-[#7CA6D6] via-[#7CA6D6]/70 to-[#7CA6D6]/80 z-20"></div>
           {/* {showQrCode && <GetQrCode setShowQrCode={setShowQrCode} />} */}
 
