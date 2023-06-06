@@ -113,7 +113,7 @@ const Gift = () => {
                       data-aos-duration="1200"
                       className="text-zinc-500 titles font-semibold text-md uppercase sm:text-lg mb-2 tracking-wider"
                     >
-                      Irsan Suanda
+                      Irsan Suwanda
                     </p>
                     <p
                       data-aos="fade-right"
