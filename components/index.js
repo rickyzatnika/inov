@@ -9,5 +9,4 @@ export { default as Navbar } from "./Navbar/NavMobile";
 export { default as Footer } from "./section/Footer"
 export { default as Gift } from "./section/Gift"
 export { default as Story } from "./section/Story"
-export { default as Loading } from "./Loading"
 export { default as Intro } from "./Intro"

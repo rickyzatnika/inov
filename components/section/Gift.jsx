@@ -73,9 +73,9 @@ const Gift = () => {
             </div>
             <div className="flex gap-3 pt-6">
               <button
-                className={` tracking-widest ${
+                className={`text-sm tracking-wide ${
                   activeButton === "button1"
-                    ? "border px-8 py-1 text-zinc-200 rounded-full shadow-md bg-[#023497e6]"
+                    ? "border px-8 py-1 text-zinc-200 rounded-full shadow-md bg-[#0060AD]"
                     : "border px-8 py-1 text-zinc-400 rounded-full bg-zinc-100"
                 }`}
                 onClick={() => setActiveButton("button1")}
@@ -83,9 +83,9 @@ const Gift = () => {
                 Mandiri
               </button>
               <button
-                className={` tracking-widest ${
+                className={`text-sm tracking-widest ${
                   activeButton === "button2"
-                    ? "border px-8 py-1 text-zinc-200 rounded-full shadow-md bg-[#023497ae]"
+                    ? "border px-8 py-1 text-zinc-200 rounded-full shadow-md bg-[#013297]"
                     : "border px-8 py-1 text-zinc-400 rounded-full bg-zinc-100"
                 }`}
                 onClick={() => setActiveButton("button2")}

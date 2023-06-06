@@ -3,30 +3,30 @@ import React from "react";
 import Image from "next/legacy/image";
 import AOSWrapper from "../AOS/AOSWrapper";
 
-const ShowProtocol = () => {
+const Prokes = () => {
   const images = [
     {
       id: 1,
-      src: "/img/prokes-1.png",
+      src: "/image/prokes_1.png",
     },
     {
       id: 2,
-      src: "/img/prokes-2.png",
+      src: "/image/prokes_2.png",
     },
     {
       id: 3,
-      src: "/img/prokes-3.png",
+      src: "/image/prokes_3.png",
     },
     {
       id: 4,
-      src: "/img/prokes-4.png",
+      src: "/image/prokes_4.png",
     },
   ];
 
   return (
     <>
       <AOSWrapper>
-        <div className="w-full min-h-3xl bg-[#F5F5F5]  pt-2 pb-6 px-5 sm:px-3  ">
+        <div className="w-full min-h-3xl bg-[#F5F5F5]  py-8 px-5 sm:px-3  ">
           <div className=" w-full flex flex-col py-8 items-center shadow-lg rounded-xl shadow-black/10  justify-between">
             <div className="text-md w-full   text-center ">
               <h1
@@ -44,15 +44,15 @@ const ShowProtocol = () => {
                 PREVENTION
               </p>
             </div>
-            <div className=" py-4 grid grid-cols-2 px-3 gap-4 items-center justify-center">
+            <div className=" py-12 grid grid-cols-2 px-3 gap-4 items-center justify-center">
               {images.map((image) => (
-                <div key={image.id} className="w-full h-full mb-3 px-4 ">
+                <div key={image.id} className=" px-1 ">
                   <img
                     data-aos="fade-up"
-                    data-aos-duration="1400"
+                    data-aos-duration="1200"
                     src={image.src}
                     alt="protokol kesehatan"
-                    className=""
+                    className="w-28 h-full"
                   />
                 </div>
               ))}
@@ -64,4 +64,4 @@ const ShowProtocol = () => {
   );
 };
 
-export default ShowProtocol;
+export default Prokes;

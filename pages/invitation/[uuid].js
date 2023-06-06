@@ -13,7 +13,7 @@ import axios from "axios";
 const Invitation = dynamic(() => import('../../components/section/Invitation'));
 const Event = dynamic(() => import('../../components/section/Event'));
 const Wish = dynamic(() => import('../../components/section/Wish'));
-const Gallery = dynamic(() => import('../../components/section/Gallery'));
+const Prokes = dynamic(() => import('../../components/ShowProkes'));
 const Profile = dynamic(() => import('../../components/section/Profile'));
 
 const GuestInvitation = ({ guest, posts }) => {
@@ -29,6 +29,7 @@ const GuestInvitation = ({ guest, posts }) => {
       <Profile />
       <Invitation guest={guest} />
       <Event guest={guest} />
+      <Prokes />
       <Gift />
       <Wish guest={guest} posts={posts} />
       <Footer />
