@@ -140,7 +140,7 @@ const Gift = () => {
                     </button>
                   )}
                   <Link
-                    href="https://dboard.webqodes.com"
+                    href="https://api.whatsapp.com/send?phone=6287730695698&text=Hallo%20Irsan%2C%20saya%20mau%20konfirmasi%20pengiriman%20hadiah."
                     target="_blank"
                     className="flex items-center rounded gap-1 mt-5 py-2  px-4 bg-gradient-to-tr from-[#F5F5F5] via-[#E6E6FA] to-[#F5F5F5] shadow-md shadow-zinc-300 text-zinc-500"
                   >
@@ -197,7 +197,7 @@ const Gift = () => {
                     </button>
                   )}
                   <Link
-                    href="https://wa.link/q8d5da"
+                    href="https://api.whatsapp.com/send?phone=6285161711142&text=Hallo%20Inov%2C%20saya%20mau%20konfirmasi%20pengiriman%20hadiah."
                     target="_blank"
                     className="flex items-center rounded gap-1 mt-5 py-2  px-4 bg-gradient-to-tr from-[#F5F5F5] via-[#E6E6FA] to-[#F5F5F5] shadow-md shadow-zinc-300  text-zinc-500"
                   >

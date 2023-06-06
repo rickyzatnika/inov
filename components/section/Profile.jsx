@@ -17,10 +17,18 @@ const Profile = () => {
           id="profile"
         >
           <div className="text-center relative z-40 px-2 leading-relaxed mb-10">
-            <h3 className="titles text-2xl mb-3">
+            <h3
+              data-aos="fade-down"
+              data-aos-duration="1500"
+              className="titles text-xl mb-3 text-[#222]"
+            >
               Assalamu'alaikum Warohmatullahi Wabarokatuh
             </h3>
-            <p className="text-zinc-700 text-sm">
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              className="text-[#444]/80 text-sm"
+            >
               Dengan memohon Ridho serta Rahmat Allah SWT, kami bermaksud
               menyelenggarakan resepsi pernikahan putra-putri kami,
             </p>
