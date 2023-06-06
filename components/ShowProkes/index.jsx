@@ -7,19 +7,19 @@ const Prokes = () => {
   const images = [
     {
       id: 1,
-      src: "/image/prokes_1.png",
+      src: "/img/prokes-1.png",
     },
     {
       id: 2,
-      src: "/image/prokes_2.png",
+      src: "/img/prokes-2.png",
     },
     {
       id: 3,
-      src: "/image/prokes_3.png",
+      src: "/img/prokes-3.png",
     },
     {
       id: 4,
-      src: "/image/prokes_4.png",
+      src: "/img/prokes-4.png",
     },
   ];
 
