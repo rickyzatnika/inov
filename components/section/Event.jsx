@@ -127,7 +127,7 @@ const Event = ({ guest }) => {
               location="Jl. Karang Tineung Dalam, Cipedes, Kec. Sukajadi, Kota Bandung, Jawa Barat 40162"
               startDate="2023-7-5"
               startTime="11:00"
-              endTime="15:00"
+              endTime="16:00"
               timeZone="Asia/Jakarta"
               buttonStyle="neumorphism"
               lightMode="bodyScheme"
