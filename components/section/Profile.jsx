@@ -251,7 +251,7 @@ const Profile = () => {
                     data-aos-duration="900"
                     className="titles capitalize text-lg"
                   >
-                    Bpk. Iadang sutarda{" "}
+                    Bpk. Adang sutarda{" "}
                   </p>
                   <p data-aos="fade-up" data-aos-duration="1000">
                     &
