@@ -20,7 +20,13 @@ const CommentForm = ({ guest }) => {
       .patch(`${process.env.NEXT_PUBLIC_PRO_URI}/invitation/comment/${uuid}`, {
         comments: comments,
         date: moment().format("DD MMMM YYYY, h:mm a"),
-      })
+      },
+        {
+          headers: {
+            "Content-Type": "application/json; charset=UTF-8",
+          },
+        }
+      )
       .then(() => {
         setLoading(true);
         setTimeout(() => {
