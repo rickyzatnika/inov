@@ -81,7 +81,7 @@ const Invitation = () => {
                   className="font-semibold titles text-zinc-500  "
                 >
                   {" "}
-                  08.30 WIB s/d Selesai
+                  Pukul 08.30 WIB
                 </p>
               </div>
               <h2
@@ -116,7 +116,7 @@ const Invitation = () => {
                   data-aos-duration="1000"
                   className="font-semibold titles text-zinc-500  "
                 >
-                  11.00 WIB s/d 16.00 WIB
+                  Pukul 11.00 WIB s/d selesai
                 </p>
               </div>
             </div>

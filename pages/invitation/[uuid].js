@@ -78,14 +78,16 @@ export const getServerSideProps = async ({ params, query }) => {
   );
   const guest = res.data || {};
 
-  const res2 = await axios.get(`${process.env.NEXT_PUBLIC_PRO_URI}/comment/${params.uuid}?userId=${query.userId}`)
-  const posts = res2.data || [];
+  const res2 = await axios.get(`${process.env.NEXT_PUBLIC_PRO_URI}/comment/${params.uuid}?userId=${query.userId}`,
+    {
+      responseType: "text",
+    })
+  const posts = JSON.parse(res2.data) || [];
 
   return {
     props: {
       guest,
       posts,
-
     },
   };
 };

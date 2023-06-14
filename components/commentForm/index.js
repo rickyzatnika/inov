@@ -15,7 +15,7 @@ const CommentForm = ({ guest }) => {
   const { uuid } = router.query;
 
   const formSubmit = async ({ comments }) => {
-    const userId = guest?.userId;
+
     await axios
       .patch(`${process.env.NEXT_PUBLIC_PRO_URI}/invitation/comment/${uuid}`, {
         comments: comments,
