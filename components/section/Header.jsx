@@ -1,22 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState } from "react";
 import Image from "next/legacy/image";
 import AOSWrapper from "../AOS/AOSWrapper";
-import { images } from "../MyImage";
-import Slick from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const Header = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const settings = {
-    dots: false,
-    infinite: true,
-    autoplay: true,
-    speed: 2500,
-    fade: true,
-    className: "w-full h-full ",
-  };
   return (
     <>
       <AOSWrapper>

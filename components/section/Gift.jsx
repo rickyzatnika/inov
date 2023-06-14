@@ -29,7 +29,10 @@ const Gift = () => {
   return (
     <>
       <AOSWrapper>
-        <div className="w-full relative overflow-hidden min-h-3xl bg-white pb-14 px-4 flex items-center pt-8 ">
+        <div
+          id="gift"
+          className="w-full relative overflow-hidden min-h-3xl bg-white pb-14 px-4 flex items-center pt-8 "
+        >
           <div className="absolute -top-16 -right-14 z-10">
             <Image
               data-aos="fade-up"

@@ -1,12 +1,11 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { animateScroll as scroll } from "react-scroll";
-
+import { AiFillGift } from "react-icons/ai";
 import { BiHomeHeart } from "react-icons/bi";
 import { AiOutlineComment } from "react-icons/ai";
 import { BsCalendarDate } from "react-icons/bs";
 import { ImProfile } from "react-icons/im";
-import { GrGallery } from "react-icons/gr";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("header");
@@ -17,9 +16,9 @@ const Navbar = () => {
       const sections = [
         "header",
         "profile",
+        "gift",
         "invitation",
         "event",
-        "gallery",
         "wish",
       ];
       const scrollTop =
@@ -56,7 +55,7 @@ const Navbar = () => {
     <nav
       className={
         activeSection && document.querySelector(`#${activeSection}`)
-          ? "w-fit scale-100 flex flex-col fixed top-90 right-96 z-50 sm:right-[450px] lg:right-[550px]  transition-all duration-300 ease-linear"
+          ? "w-fit scale-100  flex-col hidden lg:flex fixed top-90 right-96 z-50 sm:right-[450px] lg:right-[550px]  transition-all duration-300 ease-linear"
           : "scale-0 transition-all duration-300 ease-linear"
       }
     >
@@ -129,27 +128,26 @@ const Navbar = () => {
         </li>
         <li
           className={`relative group flex items-center justify-center ${
-            activeSection === "gallery" ? "text-zinc-800/90" : ""
+            activeSection === "event" ? "text-[#3B302F]" : ""
           }`}
         >
           <span
             className={
-              activeSection === "gallery"
+              activeSection === "gift"
                 ? "block  left-6 text-sm absolute bg-zinc-100/80 px-2 rounded-full"
                 : "hidden  opacity-0 left-0 absolute bg-zinc-200/80 px-2 rounded-full "
             }
           >
-            Gallery
+            Gift
           </span>
           <Link
-            href="#gallery"
+            href="#gift"
             className="nav-link"
-            onClick={(event) => handleClick(event, "gallery")}
+            onClick={(event) => handleClick(event, "gift")}
           >
-            <GrGallery size={20} className="text-[#3B302F]" />
+            <AiFillGift size={20} className="text-[#3B302F]" />
           </Link>
         </li>
-
         <li
           className={`relative group flex items-center justify-center ${
             activeSection === "wish" ? "text-[#3B302F]" : ""

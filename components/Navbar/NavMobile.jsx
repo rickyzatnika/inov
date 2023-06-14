@@ -3,9 +3,9 @@ import React, { useEffect, useState } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import { BiHomeHeart } from "react-icons/bi";
 import { AiOutlineComment } from "react-icons/ai";
+import { AiFillGift } from "react-icons/ai";
 import { BsCalendarDate } from "react-icons/bs";
 import { ImProfile } from "react-icons/im";
-import { RiGalleryLine } from "react-icons/ri";
 
 const NavMobile = () => {
   const [activeSection, setActiveSection] = useState("header");
@@ -16,9 +16,9 @@ const NavMobile = () => {
       const sections = [
         "header",
         "profile",
+        "gift",
         "invitation",
         "event",
-        "gallery",
         "wish",
       ];
       const scrollTop =
@@ -55,8 +55,8 @@ const NavMobile = () => {
     <nav
       className={
         activeSection && document.querySelector(`#${activeSection}`)
-          ? "w-full px-2 scale-100 flex lg:hidden fixed bottom-3 z-40 transition-all duration-300 ease-linear"
-          : "scale-0 transition-all duration-300 ease-linear"
+          ? "w-full px-2  flex lg:hidden fixed bottom-3 z-40 overflow-hidden transition-all duration-500 ease-out"
+          : "-bottom-96"
       }
     >
       <ul className="w-full  bg-zinc-50/70  shadow-md shadow-zinc-600/40 backdrop-blur flex items-center justify-around rounded-full h-full py-2  px-6">
@@ -125,25 +125,25 @@ const NavMobile = () => {
           </Link>
         </li>
         <li
-          className={`relative group flex  flex-col-reverse items-center justify-center ${
-            activeSection === "gallery" ? "text-[#3B302F]" : ""
+          className={`relative group flex flex-col-reverse items-center justify-center ${
+            activeSection === "gift" ? "text-[#3B302F]" : ""
           }`}
         >
           <span
             className={
-              activeSection === "gallery"
-                ? " text-xs"
-                : "hidden  left-0 absolute"
+              activeSection === "gift"
+                ? " text-xs    "
+                : "hidden left-0 absolute  "
             }
           >
-            Gallery
+            Gift
           </span>
           <Link
-            href="#gallery"
+            href="#gift"
             className="nav-link"
-            onClick={(event) => handleClick(event, "gallery")}
+            onClick={(event) => handleClick(event, "gift")}
           >
-            <RiGalleryLine size={28} className="text-[#3B302F]" />
+            <AiFillGift size={28} className="text-[#3B302F]" />
           </Link>
         </li>
         <li

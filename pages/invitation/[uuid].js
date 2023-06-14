@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import dynamic from 'next/dynamic';
-import {
-  Header,
-  Navbar,
-  Footer,
-  Gift,
-  Intro
-} from "../../components";
+import { Footer, Intro } from "../../components";
 import BackSound from "../../components/Backsound";
 import axios from "axios";
 
+
+const Header = dynamic(() => import('../../components/section/Header'));
+const Gift = dynamic(() => import('../../components/section/Gift'));
 const Invitation = dynamic(() => import('../../components/section/Invitation'));
+const Navbar = dynamic(() => import('../../components/Navbar/NavMobile'));
 const Event = dynamic(() => import('../../components/section/Event'));
 const Wish = dynamic(() => import('../../components/section/Wish'));
 const Prokes = dynamic(() => import('../../components/ShowProkes'));
@@ -19,7 +17,6 @@ const Profile = dynamic(() => import('../../components/section/Profile'));
 const GuestInvitation = ({ guest, posts }) => {
 
   const [isPlay, setIsPlay] = useState(true);
-
 
   return (
     <>
