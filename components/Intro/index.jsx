@@ -7,7 +7,7 @@ const Intro = () => {
     <>
       <AOSWrapper>
         <div
-          id="profile"
+          id="invitation"
           className="w-full min-h-5xl py-14 bg-white overflow-hidden relative text-center leading-relaxed"
         >
           <div className="z-10 absolute opacity-50 -top-12 left-0">
